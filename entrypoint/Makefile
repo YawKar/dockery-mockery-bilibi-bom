@@ -7,3 +7,6 @@ run: build
 
 run-with-arg: build
 	docker run entrypoint:try YawKar
+
+run-with-override: build
+	docker run --entrypoint echo entrypoint:try echoed
